@@ -1,0 +1,19 @@
+There are three types of access modifiers namely public, protected, and private.
+
+Public members − A class member is said to be public if it can be accessed from anywhere in the 
+program.
+
+Protected members − They are accessible from within the class as well as by classes derived from 
+that class.To imply that a certain instance variable is protected, prefix it with single 
+underscore (such as "_salary").
+
+Private members − They can be accessed from within the class only.To indicate that an instance 
+variable is private, prefix it with double underscore (such as "__age")
+
+Unlike C++ and Java, Python does not use the Public, Protected and Private keywords to specify 
+the type of access modifiers. By default, all the variables and methods in a Python class are 
+public.
+
+Getter Setter - is used to assign and retrive the private attribute which are related to
+encapsulation. We can also use the property function to access the private attribute
+as class attribute.

@@ -1,0 +1,5 @@
+var = input("What is your name?")
+print(var)
+var = input("Whats the current score?")
+print(var)
+print(len(input("Who won the match?")))
