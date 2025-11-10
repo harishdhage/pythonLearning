@@ -1,0 +1,15 @@
+functions in class should have parameter self
+
+Employee.nums+=1 : Here nums of Emoployee class is called and assigned the value. So
+the updated count will remain untill the Class object is alive.
+emp3 = emp1 - Here emp3 object is assigned emp1 object. So when the functions called from
+emp3 obj, it doesnot runs the same function again. Instead it just passes the previously
+result from memory.Hence count is not increased.
+
+@classmethod - Allow operations related to class itself. Takes cls as first parameter
+                which represents  class itself.
+                Best for class-level data or requires to access class itself
+@staticmethod - Best for utility functions that do not need access to class data. Its
+                not like java which loads the static method before the object creation.
+                This method is not allowed to override.
+@instantmethod - Best for operation on instances of class (object)
