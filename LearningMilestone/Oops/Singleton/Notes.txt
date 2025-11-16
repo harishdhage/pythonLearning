@@ -1,0 +1,10 @@
+In Python, a Singleton class is the implementation of singleton design pattern which
+means this type of class can have only one object. This helps in optimizing memory
+usage when you perform some heavy operation, like creating a database connection.
+
+If we try to create multiple objects for a singleton class, the object will be created
+only for the first time. After that, the same object instance will be returned.
+
+Approach to create
+__init__() -
+__new__() -

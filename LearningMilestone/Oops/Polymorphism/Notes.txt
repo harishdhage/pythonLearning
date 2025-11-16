@@ -1,0 +1,24 @@
+The term polymorphism refers to a function or method taking different forms in
+different contexts. Since Python is a dynamically typed language, polymorphism in
+Python is very easily implemented.
+
+Types of implementaton
+Duck Typing - is a concept where the type or class of an object is less important
+than the methods it defines. Using this concept, you can call any method on an object
+without checking its type, as long as the method exists.
+Operator Overloading - redefining how operators work with custom objects. Suppose you
+have created a Vector class to represent two-dimensional vectors, what happens when
+you use the plus operator to add them?
+Most likely Python will yell at you.
+Method Overriding - a method defined inside a subclass has the same name as a
+method in its superclass but implements a different functionality.
+Method Overloading - is a feature of object-oriented programming where a \
+(in single class) class can have multiple methods with the same name but different
+parameters. To overload method, we must change the number of parameters or the type
+of parameters, or both. Unlike other programming languages like Java, C++, and C#,
+Python does not support the feature of method overloading by default.
+Python's standard library doesn't have any other provision for implementing method
+overloading. However, we can use a dispatch function from a third-party module named
+MultipleDispatch for this purpose.
+First, you need to install the Multipledispatch module using the following
+command - pip install multipledispatch

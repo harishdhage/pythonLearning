@@ -8,7 +8,27 @@ Types
 Single Inheritance - This is the simplest form of inheritance where a child
 class inherits attributes and methods from only one parent class.
 Multiple Inheritance - Here child class can inherit the property from more
-than one class.
-Multilevel Inheritance
-Hierarchical Inheritance
-Hybrid Inheritance
+than one class. We need to follow rule for parameter in condition where A -> B,
+then class C parameter start from B is child and A is parent of B. C(B,A)
+Multilevel Inheritance -a class is derived from another derived class. There
+exists multiple layers of inheritance. We can imagine it as a
+grandparent-parent-child relationship.
+Hierarchical Inheritance - This type of inheritance contains multiple derived
+classes that are inherited from a single base class. This is similar to the
+hierarchy within an organization
+Hybrid Inheritance - Combination of two or more types of inheritance is
+called as Hybrid Inheritance. For instance, it could be a mix of single and
+multiple inheritance.
+
+super() - In Python, super() function allows you to access methods and attributes
+of the parent class from within a child class. Here child class __init() should declare
+parent method parament attribute and super function should be defined inside the
+child __init__
+
+MRO - If methods with same name are defined in multiple parent classes, Python follows
+ a specific order to decide which method to execute. This order is known as the Method
+ Resolution Order (MRO). This order is determined by the C3 linearization algorithm,
+ also called MRO. The MRO order is listed below.
+    First, Python looks for the method in the child class itself.
+    If not found, it searches the parent classes in the order they are listed.
+    This continues until the method is found or all classes have been searched.

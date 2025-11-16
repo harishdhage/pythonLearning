@@ -1,0 +1,23 @@
+Abstraction is one of the important principles of object-oriented programming.
+It refers to a programming approach by which only the relevant data about an object
+is exposed, hiding all the other details. This approach helps in reducing the
+complexity and increasing the efficiency of application development.
+
+Types
+data abstraction -wherein the original data entity is hidden via a data structure
+that can internally work through the hidden data entities.
+process abstraction - It refers to hiding the underlying implementation details
+of a process
+
+Abstract Class
+To create an abstract class in Python, it must inherit the ABC class that is defined
+in the ABC module. This module is available in Python's standard library. Moreover,
+the class must have at least one abstract method. Again, an abstract method is the
+one which cannot be called but can be overridden. You need to decorate it with
+@abstractmethod decorator.
+
+Interface
+An interface in Python is a programming contract — it’s usually implemented either
+with abc.ABC (runtime-enforced abstract base classes) or with typing.Protocol
+(static/structural interfaces for type checkers). Python has no separate interface
+keyword like Java; Protocol and ABC serve that role.
