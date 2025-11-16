@@ -1,27 +1,32 @@
-class Vehicle:
-    def feature(self,seatingCapacity=2):
-        print('Its Bike')
-    def displayVehicle(self):
-        print("From Vehicle class")
-class Car(Vehicle):
-    def feature(self,seatingCapacity=4):
-        if seatingCapacity ==4:
-            print('Its Car')
-        elif seatingCapacity == 7:
-            print('Its SUV')
-    def displayCar(self):
-        print("From Car class")
-class Bus(Car):
-    def feature(self,seatingCapacity=20):
-        if seatingCapacity == 20:
-            print('Its Mini Bus')
-        elif seatingCapacity == 51:
-            print('Its Big Bus')
-    def displayBus(self):
-        print("From Bus class")
+class division:
+    def __init__(self, a, b):
+        self.n = a
+        self.d = b
 
-b1 = Bus()
-b1.feature(20)
-b1.displayVehicle()
-b1.displayCar()
-b1.displayBus()
+    def divide(self):
+        return self.n / self.d
+
+
+class modulus:
+    def __init__(self, a, b):
+        self.n = a
+        self.d = b
+
+    def mod_divide(self):
+        return self.n % self.d
+
+
+class div_mod(division, modulus):
+    def __init__(self, a, b):
+        self.n = a
+        self.d = b
+
+    def div_and_mod(self):
+        divval = division.divide(self)
+        modval = modulus.mod_divide(self)
+        return (divval, modval)
+
+dmod = div_mod(10,4)
+print(f'dmod.divide() - {dmod.divide()}')
+print(f'dmod.mod_divide() - {dmod.mod_divide()}')
+print(f'dmod.div_and_mod() - {dmod.div_and_mod()}')
