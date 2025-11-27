@@ -1,0 +1,9 @@
+Broadcasting in NumPy refers to the ability of performing operations on arrays with
+different shapes by automatically expanding the smaller array's shape to match the
+larger array's shape. This is useful when performing arithmetic operations or applying
+functions to arrays of different dimensions.
+
+Rule
+If array1 had shape (1,4) and array2 has shape (4,1), then able broadcast
+If array1 had shape (4,4) and array2 has shape (4,1), then able broadcast
+If array1 had shape (1,4) and array2 has shape (4,2), then not able broadcast
