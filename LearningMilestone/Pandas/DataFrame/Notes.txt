@@ -1,0 +1,3 @@
+In Data frame, when we add new row is concatinated then whole Data Frame will have
+duplicate indexes. In this case if we perform loc() operation for duplicates indexes
+it will result all rows has index matches.
