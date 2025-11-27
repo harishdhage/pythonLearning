@@ -1,0 +1,3 @@
+NumPy - is external library written in c language to performa operation on numerical
+data. This is very fast and useful for huge num of data. It supports N dimentional
+array.
