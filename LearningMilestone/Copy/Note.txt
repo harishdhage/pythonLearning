@@ -1,0 +1,3 @@
+Shallow Copy - will copy the top level only, so any changes to top level will not reflect 
+changes to original. If changes made to 2nd or below level same changes reflect to original.
+Deep Copy - It will copy all levels, hence any changes will not reflect to original.

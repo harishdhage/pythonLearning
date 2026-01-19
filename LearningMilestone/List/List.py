@@ -13,7 +13,9 @@ listB=[1,4,True,'Sun',546.124]
 print(listA)
 print(listA[0])
 print(listA[-2]) #Printing 2nd index counting from last
-listB[-1]=33.98 #Adding ele at last index
+print("List B Original - ",listB)
+listB[-1]=33.98 # updating value
+print("List B after updating last index - ",listB)
 listB.append('last one') #Adding ele at last index
 print(listB)
 listB.insert(3,"Ball") #Insert item to list at index 3
@@ -28,6 +30,9 @@ print("Get index of item - ",listA.index("Ball"))
 listA.insert(-8,"Ball")
 print("Get count of element repeated - ",listA.count("Ball"))
 #print("Sort element - ",listA.sort()) - Not allowed to perform sort if list contains multiple typed elements
+
+#list[start:end:step] - start index is inclusive, end index is exclusive
+print("From index 2 to 5 - ", listA[2:5])
 print("From index 3 - ", listA[2:])
 print("From index 3 to last-1 index - ", listA[2:-1])
 print("From -5 to -1 : ",listA[-5:-1])
@@ -42,4 +47,4 @@ listC=[listA,listB]
 print(listC)
 print(listC[0][1]) #here listC[list seq][item from list]
 print("Reverse listC - ",listC[::-1]) #Reverse the list
-print("Get alternative from listC - ",listC[0:1:2]) #Not working
+print("Get alternative from listC - ",listC[0:1:2]) #Gives the alternative list from listC

@@ -12,11 +12,11 @@ student_scores['Baba'] = 53 # Added new key
 print(student_scores)
 student_scores.pop('Draco') # Remove key from dictionary
 print(student_scores)
-del  student_scores['Hermione']
+del  student_scores['Hermione'] # Remove key from dictionary
 print(student_scores)
-student_scores.setdefault('Honda',98)
+student_scores.setdefault('Honda',98) # Add new key if not exists
 print(student_scores)
-print(student_scores.popitem())
+print(student_scores.popitem()) # Remove last inserted key
 print(student_scores)
-student_scores.update({'Mango':23})
+student_scores.update({'Mango':23}) # Add new key using update()
 print(student_scores)

@@ -1,4 +1,10 @@
 
+# Dictionary - key:value pair like map in other languages
+# Keys are unique, values can be duplicate
+# Mutable - can add, remove, update items
+# Unordered - items do not have index
+# Defined using {} or dict()
+
 test_dict = {}
 print(type(test_dict))
 
@@ -31,14 +37,14 @@ student_scores = {
 
 student_grades ={}
 
-for item in student_scores:
-    if student_scores[item] > 90:
-        student_grades[item]="Outstanding"
-    elif student_scores[item] > 80 and student_scores[item] < 91:
-        student_grades[item]="Exceeds Expectations"
-    elif student_scores[item] > 70 and student_scores[item] < 81:
-        student_grades[item]="Acceptable"
-    elif student_scores[item] < 71:
-        student_grades[item]="Fail"
+for itemKey in student_scores:
+    if student_scores[itemKey] > 90:
+        student_grades[itemKey]="Outstanding"
+    elif student_scores[itemKey] > 80 and student_scores[itemKey] < 91:
+        student_grades[itemKey]="Exceeds Expectations"
+    elif student_scores[itemKey] > 70 and student_scores[itemKey] < 81:
+        student_grades[itemKey]="Acceptable"
+    elif student_scores[itemKey] < 71:
+        student_grades[itemKey]="Fail"
 
 print(student_grades)
