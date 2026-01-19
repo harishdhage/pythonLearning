@@ -1,6 +1,7 @@
 import array
 ar = array.array[1,2,4,2,6,8]
 print(type(ar))
+print(ar)
 
 import math
 ad= math.sqrt(4)

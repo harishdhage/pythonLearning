@@ -1,0 +1,2 @@
+Tuple - Its immutable, ordered, can have duplicate
+Can have list inside tuple.

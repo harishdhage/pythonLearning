@@ -2,11 +2,11 @@
 class Employee:
     count=1
     nums=10
-    def __init__(self, name, salary):
+    def __init__(self, name, salary): # self is the current object
         self.name = name
         self.salary = salary
         self.count+=1
-        Employee.nums+=1
+        Employee.nums+=1 # Accessing class variable using class name
     def displayEmployee(self):
         print(f'Employee name : {self.name} and salary : {self.salary}')
     def displayCount(self):
@@ -27,6 +27,8 @@ emp3 = emp1
 emp3.displayEmployee()
 emp3.displayCount()
 emp2.employeeDept("IT")
+emp = Employee('Puppy', 5000)
+emp.displayCount()
 print('Nums : ',Employee.nums)
 Employee.nums+=10
 print('Nums after increment : ',Employee.nums)

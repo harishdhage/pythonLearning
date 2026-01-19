@@ -17,4 +17,4 @@ along with self is called as parameterized constructor.
 Multiple Constroctor
 - Not allowed in Python, but if defined python doesn't throw any error. But it only
   consider the last __init__().
-- We can achive multiple constror call by overloading concept.
+- We can achive multiple constructor call by overloading concept.

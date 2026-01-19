@@ -2,9 +2,9 @@
 class Car:
     'Its car class'
     count=0
-    def __init__(self,company, model):
+    def __init__(self, company, model): #constructor
         self.company = company
-        self.modl = model
+        self.model = model
         Car.count+=1
     def suv(self):
         print(f" {self.company} manufactures suv" )
@@ -12,6 +12,6 @@ class Car:
         print('Count %d'%Car.count)
 
 car = Car("Tata", "Nexon")
-print(car.company ," : ",car.modl)
+print(car.company ," : ",car.model)
 car.suv()
 car.countDisplay()

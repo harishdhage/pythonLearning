@@ -1,5 +1,5 @@
 
-def printArgument(*args):
+def printArgument(*args): #*args allows variable number of positional arguments
     for num in args:
         print(num)
 

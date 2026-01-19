@@ -9,7 +9,7 @@ class Employee:
         print(f" {self.name} : {self.position}")
 
     @staticmethod
-    def checkposition(position):
+    def checkposition(position): # static method
         valid_position = ['Manager', 'HR', 'Electrician', 'Cook']
         return position in valid_position
 

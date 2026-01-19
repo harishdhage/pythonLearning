@@ -4,7 +4,7 @@ class Father:
 class Mother:
     def skill(self):
         print("Mother skill is Arguing")
-class Child(Mother,Father):
+class Child(Father, Mother):
     pass
 
 c1 = Child()
